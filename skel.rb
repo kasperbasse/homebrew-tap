@@ -5,21 +5,21 @@
 class Skel < Formula
   desc "Save your Mac dev setup. Restore it anywhere. In minutes."
   homepage "https://github.com/kasperbasse/skel"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/kasperbasse/skel/releases/download/v0.3.0/skel_0.3.0_darwin_amd64.tar.gz"
-    sha256 "ebd79b67da8b8bdd99f751a9ce47a0556714497e466e2b906bc76b554dd8a676"
+    url "https://github.com/kasperbasse/skel/releases/download/v0.4.0/skel_0.4.0_darwin_amd64.tar.gz"
+    sha256 "93717221eb7b0372f7eee74cfd738340468b361093580f28868588220d28c360"
 
     define_method(:install) do
       bin.install "skel"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/kasperbasse/skel/releases/download/v0.3.0/skel_0.3.0_darwin_arm64.tar.gz"
-    sha256 "13586baea9626020076479a62e001395d5fc32a27b1740296567256601846e45"
+    url "https://github.com/kasperbasse/skel/releases/download/v0.4.0/skel_0.4.0_darwin_arm64.tar.gz"
+    sha256 "e1524007319610ec13cf37c2a81d798eab9536f6c2ceff189a4f6856da16c0c2"
 
     define_method(:install) do
       bin.install "skel"
